@@ -1,8 +1,13 @@
 import logo from "./logo.svg";
-import "./App.css";
+import classe from "./App.module.css";
+import { UserSkill } from "./pages";
 
 function App() {
-  return <div></div>;
+  return (
+    <div className={classe.container_main}>
+      <UserSkill />
+    </div>
+  );
 }
 
 export default App;
