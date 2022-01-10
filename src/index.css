@@ -1,12 +1,3 @@
-body {
-  /* background-color: royalblue; */
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 html,
 body,
 div,
@@ -88,10 +79,26 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  /* vertical-align: baseline; */
+  padding: 0px;
+}
+@font-face {
+  font-family: "Muli";
+  src: local("Muli"),
+    url("./assets/font/Muli/Muli-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Muli-Bold";
+  src: local("Muli-Bold"),
+    url("./assets/font/Muli/Muli-Bold.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #ffffffbb;
+  font-family: "Muli", "Helvetica", "Arial", sans-serif;
 }
