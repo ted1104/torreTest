@@ -1,14 +1,8 @@
 import React from "react";
 
 // Component importation
-import classe from "./users_skills.module.css";
-import {
-  Header,
-  Profile,
-  Skill,
-  SkillDetails,
-  UserProfile,
-} from "../../components";
+// import classe from "./users_skills.module.css";
+import { SkillDetails, UserProfile } from "../../components";
 import icons from "../../constants/icons";
 
 class UserSkill extends React.Component {
@@ -43,9 +37,15 @@ class UserSkill extends React.Component {
         },
       ],
 
-      showDetails: false,
+      showDetails: true,
     };
   }
+
+  _showDetails = () => {
+    this.setState({
+      showDetails: !this.state.showDetails,
+    });
+  };
 
   render() {
     const { skills, showDetails } = this.state;

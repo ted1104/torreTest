@@ -31,6 +31,8 @@ const skillDetails = () => {
           <div className={classe.related_experiences_list}>
             <Experiences />
             <Experiences />
+            <Experiences />
+            <Experiences />
           </div>
         </div>
 
@@ -39,6 +41,8 @@ const skillDetails = () => {
         <div className={classe.other_people}>
           <span>Other people with the skill : </span>
           <div className={classe.other_people_list}>
+            <OtherPeople />
+            <OtherPeople />
             <OtherPeople />
             <OtherPeople />
           </div>
