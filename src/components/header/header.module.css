@@ -3,6 +3,7 @@
   /* border: 1px solid white; */
   padding: 0px 0px;
   box-shadow: 0 2rem 4rem rgba(1, 1, 1, 0.5);
+  height: 10vh;
 }
 .container_header div:nth-child(1),
 .container_header div:nth-child(2),

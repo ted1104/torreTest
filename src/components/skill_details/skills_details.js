@@ -1,11 +1,17 @@
 import React from "react";
 import classe from "./skills.module.css";
+import animation from "../../utilities/css/animation.module.css";
 import { Header, Experiences, OtherPeople } from "..";
 import icons from "../../constants/icons";
 
 const skillDetails = () => {
   return (
-    <div className={classe.container_details_main}>
+    <div
+      className={[
+        classe.container_details_main,
+        animation.animationBottomToTop,
+      ].join(" ")}
+    >
       <Header isDetails />
       <div className={classe.sous_container_main}>
         <div className={classe.container_details}>

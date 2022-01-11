@@ -2,6 +2,7 @@ import React from "react";
 
 // Component importation
 // import classe from "./users_skills.module.css";
+import animation from "../../utilities/css/animation.module.css";
 import { SkillDetails, UserProfile } from "../../components";
 import icons from "../../constants/icons";
 import { connect } from "react-redux";
@@ -32,31 +33,46 @@ class UserSkill extends React.Component {
         {
           description: "Novice",
           icon: icons.monitor,
-          list: ["Software development", "Team Management"],
+          list: [
+            "Software development",
+            "Team Management",
+            "Github",
+            "API",
+            "Agile",
+            "Functional programming",
+            "Reactive Programming",
+            "Unit testing",
+            "Data analysis",
+          ],
         },
         {
           description: "No experience, but interested",
           icon: icons.monitor,
-          list: ["GIT", "Team Management", "Github"],
+          list: [
+            "GIT",
+            "Team Management",
+            "Github",
+            "API",
+            "Agile",
+            "Scala",
+            "Vue.js",
+            "React JS",
+            "React Native",
+          ],
         },
       ],
 
       showDetails: true,
     };
   }
-
-  _showDetails = () => {
-    this.setState({
-      showDetails: !this.state.showDetails,
-    });
-  };
-
   render() {
     const { skills, showDetails } = this.state;
     const { sysMenu } = this.props;
 
     return (
-      <div>{sysMenu ? <UserProfile skills={skills} /> : <SkillDetails />}</div>
+      <div className={animation.animationContainer}>
+        {sysMenu ? <UserProfile skills={skills} /> : <SkillDetails />}
+      </div>
     );
   }
 }

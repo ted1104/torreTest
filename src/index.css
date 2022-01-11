@@ -102,3 +102,23 @@ body {
   color: #ffffffbb;
   font-family: "Muli", "Helvetica", "Arial", sans-serif;
 }
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(14, 13, 13) rgb(14, 13, 13);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  /* background: white; */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(99, 96, 96, 0.192);
+  border-radius: 20px;
+  /* border: 1px solid white; */
+}

@@ -1,0 +1,62 @@
+.animationContainer {
+  animation: AnimationContainerEnter 2s;
+}
+.animationBottomToTop {
+  animation: LeftToRight 2s;
+}
+.animationDeseaper {
+  animation: Desapear 5s;
+}
+
+@keyframes BottomToTop {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes LeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes AnimationContainerEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes Desapear {
+  0% {
+    opacity: 1;
+    /* transform: translateY(-5px); */
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+    /* transform: translateY(0); */
+  }
+}
