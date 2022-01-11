@@ -15,6 +15,7 @@ class UserSkill extends React.Component {
           </div>
           <div>
             <span>Teddy Nkubonage Walter</span>
+            <span>Full Stack Web Developer</span>
           </div>
         </div>
       </div>
