@@ -1,6 +1,6 @@
 .user_profile {
   /* border: 1px solid white; */
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,4 +26,23 @@
 .user_profile div:nth-child(2) span:nth-child(2) {
   font-size: 0.8em;
   color: #cddc39;
+}
+.user_profile div:nth-child(3) {
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.user_skills {
+  color: #747474;
+  margin-top: 30px;
+  padding-left: 7px;
+}
+.user_skills span.big_title {
+  font-size: 1.3em;
+  /* color: red; */
+  margin-bottom: 10px;
+}
+.user_skills div.container_skills {
+  /* border: 1px solid red; */
+  margin-top: 12px;
 }

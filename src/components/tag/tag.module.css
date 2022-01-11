@@ -1,0 +1,8 @@
+.container_tag {
+  background-color: #74747427;
+  display: flex;
+  padding: 5px 15px;
+  border-radius: 100px;
+  color: rgba(255, 255, 255, 0.356);
+  font-weight: lighter;
+}

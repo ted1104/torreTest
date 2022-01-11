@@ -1,0 +1,21 @@
+.container_main_skill div .skill_title {
+  display: flex;
+}
+
+.container_main_skill div .skill_title div:nth-child(1) {
+  width: 25px;
+  margin-right: 10px;
+}
+.container_main_skill div .skill_title div:nth-child(1) img {
+  width: 100%;
+}
+.container_main_skill div .container_skill {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8px 0px;
+}
+
+.container_main_skill div .container_skill div {
+  margin-top: 8px;
+  margin: 4px;
+}
