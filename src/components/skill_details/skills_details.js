@@ -1,6 +1,11 @@
 import React from "react";
-const skill_details = () => {
-  return <div>Details</div>;
+import classe from "./skills.module.css";
+const skillDetails = () => {
+  return (
+    <div className={classe.container_details_skills}>
+      <p>DETAILS</p>
+    </div>
+  );
 };
 
-export { skill_details };
+export { skillDetails };
