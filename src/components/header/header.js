@@ -3,8 +3,14 @@ import classe from "./header.module.css";
 import icons from "../../constants/icons";
 import { Container } from "../../hoc";
 
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectSysMenu } from "../../redux/sys/sys.selectors";
+import { setDisplay } from "../../redux/sys/sys.action";
+
 const header = (props) => {
   const { isDetails } = props;
+
   return (
     <div className={classe.container_header}>
       {!isDetails ? (
@@ -29,7 +35,7 @@ const header = (props) => {
         </Container>
       ) : (
         <Container>
-          <div>
+          <div onClick={() => props.setDisplay(!props.sysMenu)}>
             <img src={icons.close} alt="close_icon" />
           </div>
           <div>
@@ -41,4 +47,11 @@ const header = (props) => {
   );
 };
 
-export { header };
+const mapDispatchToProps = (dispatch) => ({
+  setDisplay: (data) => dispatch(setDisplay(data)),
+});
+const mapStateToProps = createStructuredSelector({
+  sysMenu: selectSysMenu,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(header);

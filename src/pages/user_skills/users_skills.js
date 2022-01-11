@@ -7,6 +7,7 @@ import icons from "../../constants/icons";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectSysMenu } from "../../redux/sys/sys.selectors";
+import { setDisplay } from "../../redux/sys/sys.action";
 
 class UserSkill extends React.Component {
   constructor(props) {
@@ -52,17 +53,19 @@ class UserSkill extends React.Component {
 
   render() {
     const { skills, showDetails } = this.state;
-    console.log(this.props);
+    const { sysMenu } = this.props;
+
     return (
-      <div>
-        {showDetails ? <UserProfile skills={skills} /> : <SkillDetails />}
-      </div>
+      <div>{sysMenu ? <UserProfile skills={skills} /> : <SkillDetails />}</div>
     );
   }
 }
 
+const mapDispatchToProps = (dispatch) => ({
+  setShowMenu: (data) => dispatch(setDisplay(data)),
+});
 const mapStateToProps = createStructuredSelector({
   sysMenu: selectSysMenu,
 });
 
-export default connect(mapStateToProps)(UserSkill);
+export default connect(mapStateToProps, mapDispatchToProps)(UserSkill);

@@ -8,7 +8,7 @@ const sysReducer = (state = INITIAL_STATE, action) => {
     case sysType.SET_DISPLAY_MENU:
       return {
         ...state,
-        ShowMenu: action.payload,
+        showMenu: action.payload,
       };
     default:
       return state;
