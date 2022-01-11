@@ -4,6 +4,9 @@ import React from "react";
 // import classe from "./users_skills.module.css";
 import { SkillDetails, UserProfile } from "../../components";
 import icons from "../../constants/icons";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectSysMenu } from "../../redux/sys/sys.selectors";
 
 class UserSkill extends React.Component {
   constructor(props) {
@@ -49,6 +52,7 @@ class UserSkill extends React.Component {
 
   render() {
     const { skills, showDetails } = this.state;
+    console.log(this.props);
     return (
       <div>
         {showDetails ? <UserProfile skills={skills} /> : <SkillDetails />}
@@ -57,4 +61,8 @@ class UserSkill extends React.Component {
   }
 }
 
-export { UserSkill };
+const mapStateToProps = createStructuredSelector({
+  sysMenu: selectSysMenu,
+});
+
+export default connect(mapStateToProps)(UserSkill);
