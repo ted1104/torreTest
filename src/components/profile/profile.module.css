@@ -1,0 +1,12 @@
+.profile_image {
+  overflow: hidden;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-sizing: border-box;
+  border: 5px solid #5e626b;
+}
+
+.profile_image img {
+  width: 90%;
+  height: auto;
+}

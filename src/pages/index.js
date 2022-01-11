@@ -1,3 +1,3 @@
-import { UserSkill } from "./users_skills";
+import { UserSkill } from "./user_skills/users_skills";
 
 export { UserSkill };
