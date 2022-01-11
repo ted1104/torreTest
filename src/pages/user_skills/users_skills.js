@@ -9,6 +9,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectSysMenu } from "../../redux/sys/sys.selectors";
 import { setDisplay } from "../../redux/sys/sys.action";
+import images from "../../constants/images";
 
 class UserSkill extends React.Component {
   constructor(props) {
@@ -62,16 +63,59 @@ class UserSkill extends React.Component {
         },
       ],
 
-      showDetails: true,
+      related_experiences: [
+        {
+          title: "Founding Member of Tech Lead",
+          company: "Mediabox",
+          duration: "Feb 2015 - Dec 2017",
+        },
+        {
+          title: "Lead Developer",
+          company: "Connectis",
+          duration: "Feb 2015 - Dec 2017",
+        },
+        {
+          title: "Full Stack Developer",
+          company: "Novitlife LTD",
+          duration: "Feb 2019 - Dec 2020",
+        },
+        {
+          title: "IT Manager",
+          company: "Solidec",
+          duration: "Feb 2019 - Dec 2020",
+        },
+      ],
+
+      people_skills: [
+        {
+          pic: images.profile_03,
+          name: "Thibert Patrick",
+          position: "Mobile Developer",
+        },
+        {
+          pic: images.profile_02,
+          name: "Titien NK",
+          position: "Web Developer",
+        },
+        {
+          pic: images.profile_01,
+          name: "Rebecca Mub",
+          position: "Software Engeneer",
+        },
+      ],
     };
   }
   render() {
-    const { skills, showDetails } = this.state;
+    const { skills, related_experiences, people_skills } = this.state;
     const { sysMenu } = this.props;
 
     return (
       <div className={animation.animationContainer}>
-        {sysMenu ? <UserProfile skills={skills} /> : <SkillDetails />}
+        {sysMenu ? (
+          <UserProfile skills={skills} />
+        ) : (
+          <SkillDetails data={this.state} />
+        )}
       </div>
     );
   }

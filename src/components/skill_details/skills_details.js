@@ -4,7 +4,9 @@ import animation from "../../utilities/css/animation.module.css";
 import { Header, Experiences, OtherPeople } from "..";
 import icons from "../../constants/icons";
 
-const skillDetails = () => {
+const skillDetails = ({ data }) => {
+  const { related_experiences, people_skills } = data;
+
   return (
     <div
       className={[
@@ -35,10 +37,9 @@ const skillDetails = () => {
           <span>Teddy 's related experiences</span>
 
           <div className={classe.related_experiences_list}>
-            <Experiences />
-            <Experiences />
-            <Experiences />
-            <Experiences />
+            {related_experiences.map((item, index) => (
+              <Experiences item={item} key={index} />
+            ))}
           </div>
         </div>
 
@@ -47,10 +48,9 @@ const skillDetails = () => {
         <div className={classe.other_people}>
           <span>Other people with the skill : </span>
           <div className={classe.other_people_list}>
-            <OtherPeople />
-            <OtherPeople />
-            <OtherPeople />
-            <OtherPeople />
+            {people_skills.map((item, index) => (
+              <OtherPeople item={item} key={index} />
+            ))}
           </div>
         </div>
 

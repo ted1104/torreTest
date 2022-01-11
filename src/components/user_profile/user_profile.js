@@ -5,6 +5,7 @@ import classe from "./user_profile.module.css";
 import animation from "../../utilities/css/animation.module.css";
 import { Header, Profile, Skill } from "..";
 import icons from "../../constants/icons";
+import images from "../../constants/images";
 
 const userProfile = ({ skills }) => {
   return (
@@ -13,7 +14,7 @@ const userProfile = ({ skills }) => {
       <div className={classe.main}>
         <div className={classe.user_profile}>
           <div>
-            <Profile />
+            <Profile img={images.profile_01} />
           </div>
 
           {/* name and position */}

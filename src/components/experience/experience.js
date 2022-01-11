@@ -1,12 +1,13 @@
 import React from "react";
 import classe from "./experience.module.css";
 
-const experiences = () => {
+const experiences = ({ item }) => {
+  const { title, company, duration } = item;
   return (
     <div className={classe.experience_container}>
-      <span>Founding Member of Tech Lead</span>
-      <span>The Executive Company</span>
-      <span>Feb 2015 - Dec 2017</span>
+      <span>{title}</span>
+      <span>{company}</span>
+      <span>{duration}</span>
     </div>
   );
 };
