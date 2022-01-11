@@ -111,7 +111,7 @@ class UserSkill extends React.Component {
 
     return (
       <div className={animation.animationContainer}>
-        {sysMenu ? (
+        {!sysMenu ? (
           <UserProfile skills={skills} />
         ) : (
           <SkillDetails data={this.state} />

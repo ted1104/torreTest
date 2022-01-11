@@ -2,7 +2,7 @@
   "name": "torretest",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ted1104.github.io/Torre-test-app",
+  "homepage": "https://ted1104.github.io/torreTest",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
