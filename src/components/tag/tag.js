@@ -10,7 +10,12 @@ const tag = ({ name, ...props }) => {
   return (
     <div
       className={classe.container_tag}
-      onClick={() => props.setDisplay(!props.sysMenu)}
+      onClick={() =>
+        props.setDisplay({
+          showMenu: !props.sysMenu,
+          details: { title_skill: name, proficient: "papap" },
+        })
+      }
     >
       <span>{name}</span>
     </div>

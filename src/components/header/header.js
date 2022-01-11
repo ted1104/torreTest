@@ -6,6 +6,7 @@ import { Container } from "../../hoc";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectSysMenu } from "../../redux/sys/sys.selectors";
+import { selectDetails } from "../../redux/sys/sys.selectors";
 import { setDisplay } from "../../redux/sys/sys.action";
 
 const header = (props) => {
@@ -35,11 +36,11 @@ const header = (props) => {
         </Container>
       ) : (
         <Container>
-          <div onClick={() => props.setDisplay(!props.sysMenu)}>
+          <div onClick={() => props.setDisplay({ showMenu: !props.sysMenu })}>
             <img src={icons.close} alt="close_icon" />
           </div>
           <div>
-            <span>Software development</span>
+            <span>{props.details.title_skill}</span>
           </div>
         </Container>
       )}
@@ -52,6 +53,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 const mapStateToProps = createStructuredSelector({
   sysMenu: selectSysMenu,
+  details: selectDetails,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(header);
