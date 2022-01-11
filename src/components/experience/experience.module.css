@@ -1,0 +1,12 @@
+.experience_container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.experience_container:not(:first-child) {
+  padding-top: 20px;
+}
+.experience_container span:nth-child(1) {
+  padding-bottom: 4px;
+  color: #ccdc3970;
+}

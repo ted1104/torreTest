@@ -1,27 +1,57 @@
 .container_details_main {
   /* border: 1px solid red; */
 }
-
-.container_details_main .container_details {
-  /* color: red; */
+.container_details_main .sous_container_main {
   padding: 20px;
   color: #747474;
+}
+.container_details_main .sous_container_main .container_details {
+  /* color: red; */
+  padding: 0px 0px 20px 0px;
+
   border-bottom: 1px solid #747474;
 }
 
-.container_details_main .container_details > div:nth-child(1),
-.container_details_main .container_details > div:nth-child(2) {
+.container_details_main
+  .sous_container_main
+  .container_details
+  > div:nth-child(1),
+.container_details_main
+  .sous_container_main
+  .container_details
+  > div:nth-child(2) {
   /* color: red; */
   display: flex;
   padding-top: 10px;
 }
-.container_details_main .container_details > div:nth-child(1) > div,
-.container_details_main .container_details > div:nth-child(2) div {
+.container_details_main
+  .sous_container_main
+  .container_details
+  > div:nth-child(1)
+  > div,
+.container_details_main
+  .sous_container_main
+  .container_details
+  > div:nth-child(2)
+  div {
   /* border: 1px solid red; */
   display: flex;
   align-items: center;
   padding-left: 10px;
 }
-.container_details_main .container_details > div:nth-child(1) > div img {
+.container_details_main
+  .sous_container_main
+  .container_details
+  > div:nth-child(1)
+  > div
+  img {
   width: 20px;
+}
+
+.container_details_main .sous_container_main .related_experiences {
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid #747474;
+}
+.container_details_main .sous_container_main .related_experiences_list {
+  padding-top: 20px;
 }
