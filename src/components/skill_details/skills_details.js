@@ -1,6 +1,6 @@
 import React from "react";
 import classe from "./skills.module.css";
-import { Header, Experiences } from "..";
+import { Header, Experiences, OtherPeople } from "..";
 import icons from "../../constants/icons";
 
 const skillDetails = () => {
@@ -33,6 +33,18 @@ const skillDetails = () => {
             <Experiences />
           </div>
         </div>
+
+        {/* Other people with the skill */}
+
+        <div className={classe.other_people}>
+          <span>Other people with the skill : </span>
+          <div className={classe.other_people_list}>
+            <OtherPeople />
+            <OtherPeople />
+          </div>
+        </div>
+
+        <div></div>
       </div>
     </div>
   );
