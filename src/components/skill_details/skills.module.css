@@ -62,3 +62,43 @@
 .container_details_main .sous_container_main .other_people .other_people_list {
   padding-top: 20px;
 }
+
+/* RESPONSIVE DESIGN */
+/* SMALL DEVICES (LANDSCAPE : 576px and UP) */
+
+@media (min-width: 576px) {
+}
+
+/* MEDIUM DEVICES (TABLETTE : 768px and UP) */
+
+@media (min-width: 768px) {
+  .container_details_main {
+    /* border: 2px solid rgb(43, 42, 42); */
+    position: relative;
+    margin-left: 20px;
+    width: 70vw;
+    min-height: 80vh;
+    height: 80vh;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 20px;
+    box-shadow: rgba(125, 126, 126, 0.12) 0px 2px 4px 0px,
+      rgba(187, 191, 192, 0.116) 0px 2px 10px 0px;
+  }
+}
+
+/* LARGE DEVICES (DESKTOP : 992px and UP) */
+
+@media (min-width: 992px) {
+  .container_details_main {
+    width: 50vw;
+  }
+}
+
+/* EXTRA LARGE DEVICES (LARGE DESKTOP : 768px and UP) */
+@media (min-width: 1200px) {
+  .container_details_main {
+    width: 40vw;
+  }
+}

@@ -7,14 +7,18 @@
 .animationDeseaper {
   animation: Desapear 5s;
 }
+.animationInfinity {
+  animation: BottomToTop 3s infinite;
+  /* transition: all 2s; */
+}
 
 @keyframes BottomToTop {
   0% {
-    transform: translateY(100%);
+    transform: translateY(50%);
   }
 
   100% {
-    transform: translateY(0%);
+    transform: translateY(20%);
   }
 }
 @keyframes LeftToRight {

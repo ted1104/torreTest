@@ -2,7 +2,9 @@ import React from "react";
 
 // Component importation
 import classe from "./user_profile.module.css";
+import animation from "../../utilities/css/animation.module.css";
 import { Header, Profile, Skill } from "..";
+import icons from "../../constants/icons";
 
 const userProfile = ({ skills }) => {
   return (
@@ -30,6 +32,14 @@ const userProfile = ({ skills }) => {
             ))}
           </div>
         </div>
+      </div>
+
+      <div className={classe.chevron}>
+        <img
+          src={icons.chevron}
+          alt="_down"
+          className={animation.animationInfinity}
+        />
       </div>
     </div>
   );

@@ -3,7 +3,17 @@
   display: flex;
   padding: 5px 15px;
   border-radius: 100px;
-  color: hsla(0, 0%, 100%, 0.356);
+  color: #ffffff5b;
   font-weight: lighter;
   cursor: pointer;
+  transition: all 1s;
+}
+
+.container_tag:hover {
+  background-color: #ccc9c998;
+  color: #ffffffce;
+  transition: all 1s;
+}
+
+.container_tag::before {
 }

@@ -35,7 +35,7 @@
 .container_header div:nth-child(4) a,
 .container_header div:nth-child(2) .app_name_last {
   text-decoration: none;
-  color: #cddc39;
+  color: #ccdc3970;
 }
 .container_header img {
   width: 30px;
