@@ -42,15 +42,16 @@ class UserSkill extends React.Component {
           list: ["GIT", "Team Management", "Github"],
         },
       ],
+
+      showDetails: false,
     };
   }
 
   render() {
-    const { skills } = this.state;
+    const { skills, showDetails } = this.state;
     return (
       <div>
-        <UserProfile skills={skills} />
-        <SkillDetails />
+        {showDetails ? <UserProfile skills={skills} /> : <SkillDetails />}
       </div>
     );
   }

@@ -9,13 +9,22 @@
 .container_header div:nth-child(3),
 .container_header div:nth-child(4) {
   /* border: 1px solid white; */
-  flex: 1;
-  padding: 10px 5px;
+  /* flex: 1; */
+  padding: 10px 10px;
   display: flex;
   align-items: center;
 }
 .container_header div:nth-child(2) {
   flex: 2;
+  padding-left: 10px;
+
+  display: flex;
+  align-items: center;
+}
+.container_header div:nth-child(3) {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 .container_header div:nth-child(2) span {
   font-size: 1.2em;
@@ -28,6 +37,9 @@
   color: #cddc39;
 }
 .container_header img {
-  width: 20px;
+  width: 30px;
   /* border: 1px solid red; */
+}
+.container_header div:nth-child(3) img {
+  width: 20px;
 }

@@ -2,8 +2,7 @@ import React from "react";
 
 // Component importation
 import classe from "./user_profile.module.css";
-import { Header, Profile, Skill, SkillDetails } from "../../components";
-import icons from "../../constants/icons";
+import { Header, Profile, Skill } from "..";
 
 const userProfile = ({ skills }) => {
   return (
